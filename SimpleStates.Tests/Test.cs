@@ -20,16 +20,12 @@ namespace SimpleStates.Tests
 		[Test()]
 		public void TestCreateInitialStates()
 		{
-			var elevator = new SimpleStateMachine();
+			var statemachine = new SimpleStateMachine();
 
-			elevator["BOOT"] = new SimpleState()
-			{
-				OnEnter = () => { Console.WriteLine("Booting..."); }
-			};
+			statemachine["BOOT"] = new SimpleState();
+			statemachine.Change("BOOT");
 
-			elevator.Change("BOOT");
-
-			Assert.AreEqual("BOOT", elevator.state.name);
+			Assert.AreEqual("BOOT", statemachine.state.name);
 		}
 
 		[Test()]
@@ -40,7 +36,7 @@ namespace SimpleStates.Tests
 
 			elevator["UP"] = new SimpleState()
 			{
-				OnEnter = () => { Console.WriteLine("Going UP"); },
+				OnEnter = () => { Console.WriteLine("Elevator is going up!"); },
 				OnUpdate = () => { floor++; },
 				transitions =
 				{
@@ -50,12 +46,12 @@ namespace SimpleStates.Tests
 
 			elevator["TOP"] = new SimpleState()
 			{
-
+				OnEnter = () => { Console.WriteLine("Elevator is at the top!"); },
 			};
 
 			elevator.Change("UP");
 
-			for(var i = 0 ; i < 100 ; i++)
+			while(elevator.state.name != "TOP")
 			{
 				elevator.Update();
 			}
