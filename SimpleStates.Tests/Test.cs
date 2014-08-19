@@ -40,7 +40,7 @@ namespace SimpleStates.Tests
 				OnUpdate = () => { floor++; },
 				transitions =
 				{
-					new SimpleStateTransition("TOP", () => floor == 25)
+					new SimpleStateTransition(() => floor == 25, "TOP")
 				}
 			};
 

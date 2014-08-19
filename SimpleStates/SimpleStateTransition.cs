@@ -8,7 +8,7 @@ namespace SimpleStates
 		string nextState;
 		Func<bool> criteria;
 
-		public SimpleStateTransition(string pNextState, Func<bool> pCriteria)
+		public SimpleStateTransition(Func<bool> pCriteria, string pNextState)
 		{
 			nextState = pNextState;
 			criteria = pCriteria;

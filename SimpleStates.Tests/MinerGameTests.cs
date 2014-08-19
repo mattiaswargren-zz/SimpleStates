@@ -24,7 +24,7 @@ namespace SimpleStates.Tests
 			{
 				OnEnter = () => Console.WriteLine(BOOT),
 				transitions = {
-					new SimpleStateTransition(ENTER_MINE_AND_DIG_FOR_NUGGETS, () => true)
+					new SimpleStateTransition(() => true, ENTER_MINE_AND_DIG_FOR_NUGGETS)
 				}
 			};
 
@@ -33,7 +33,7 @@ namespace SimpleStates.Tests
 				OnEnter = () => Console.WriteLine("Resting"),
 				OnUpdate = () => { sleepiness--; },
 				transitions = {
-					new SimpleStateTransition(ENTER_MINE_AND_DIG_FOR_NUGGETS, () => sleepiness <= 0)
+					new SimpleStateTransition(() => sleepiness <= 0, ENTER_MINE_AND_DIG_FOR_NUGGETS)
 				}
 			};
 
@@ -43,8 +43,8 @@ namespace SimpleStates.Tests
 				OnEnter = () => Console.WriteLine("Looking for nuggets"),
 				OnUpdate = () => { sleepiness++; goldInPockets += new Random().Next(0, 10); },
 				transitions = {
-					new SimpleStateTransition(GO_HOME_AND_REST, () => sleepiness > 10),
-					new SimpleStateTransition(VISIT_BANK_AND_DEPOSIT_GOLD, () => goldInPockets >= 10),
+					new SimpleStateTransition(() => sleepiness > 10, GO_HOME_AND_REST),
+					new SimpleStateTransition(() => goldInPockets >= 10, VISIT_BANK_AND_DEPOSIT_GOLD),
 				}
 			};
 
@@ -54,8 +54,8 @@ namespace SimpleStates.Tests
 				OnEnter = () => { Console.WriteLine(string.Format("Depositing {0} gold", goldInPockets)); goldInBank += goldInPockets; goldInPockets = 0; },
 				OnUpdate = () => { sleepiness++; },
 				transitions = {
-					new SimpleStateTransition(ENTER_MINE_AND_DIG_FOR_NUGGETS, () => sleepiness < 10 ),
-					new SimpleStateTransition(GO_HOME_AND_REST, () => sleepiness >= 10)
+					new SimpleStateTransition(() => sleepiness < 10, ENTER_MINE_AND_DIG_FOR_NUGGETS),
+					new SimpleStateTransition(() => sleepiness >= 10, GO_HOME_AND_REST)
 				}
 			};
 
