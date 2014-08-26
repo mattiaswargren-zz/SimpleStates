@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{629647B3-72CF-4F83-9F00-B5C4D79CC7D7}</ProjectGuid>
+    <ProjectGuid>{784A3840-70BD-4AED-B7C5-06D3E4F29538}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SimpleStates.Tests</RootNamespace>
-    <AssemblyName>SimpleStates.Tests</AssemblyName>
+    <RootNamespace>simplestates.tests</RootNamespace>
+    <AssemblyName>simplestates.tests</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,15 +30,15 @@
     <Reference Include="System" />
     <Reference Include="nunit.framework" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Test.cs" />
-    <Compile Include="MinerGameTests.cs" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\SimpleStates\SimpleStates.csproj">
-      <Project>{DAE08E08-6D83-4FD8-834E-EF849B9615D6}</Project>
-      <Name>SimpleStates</Name>
+    <Compile Include="TestMinerGame.cs" />
+    <Compile Include="TestBasics.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\simplestates\simplestates.csproj">
+      <Project>{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}</Project>
+      <Name>simplestates</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

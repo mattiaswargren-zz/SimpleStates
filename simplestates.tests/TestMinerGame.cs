@@ -1,10 +1,12 @@
-﻿using NUnit.Framework;
+﻿// Copyright (c) 2014 Mattias Wargren
+
+using NUnit.Framework;
 using System;
 
-namespace SimpleStates.Tests
+namespace simplestates.tests
 {
 	[TestFixture()]
-	public class MinerGameTests
+	public class TestMinerGame
 	{
 		[Test()]
 		public void TestGame()

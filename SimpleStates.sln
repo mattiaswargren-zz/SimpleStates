@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplestates", "simplestates\simplestates.csproj", "{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplestates.tests", "simplestates.tests\simplestates.tests.csproj", "{784A3840-70BD-4AED-B7C5-06D3E4F29538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C26A8EA-D5EB-46A5-B274-F54F5A3339D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784A3840-70BD-4AED-B7C5-06D3E4F29538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784A3840-70BD-4AED-B7C5-06D3E4F29538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784A3840-70BD-4AED-B7C5-06D3E4F29538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784A3840-70BD-4AED-B7C5-06D3E4F29538}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = simplestates\simplestates.csproj
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = Copyright (c) ${Year} ${CopyrightHolder}
+		$1.IncludeInNewFiles = True
+	EndGlobalSection
+EndGlobal

@@ -1,7 +1,9 @@
+// Copyright (c) 2014 Mattias Wargren
+
 using System;
 using System.Collections.Generic;
 
-namespace SimpleStates
+namespace simplestates
 {
 	public class SimpleState
 	{

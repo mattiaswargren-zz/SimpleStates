@@ -1,14 +1,13 @@
-﻿// Test.cs
-// Copyright (c) 2014 Hello There
-//
+﻿// Copyright (c) 2014 Mattias Wargren
+
+
 using NUnit.Framework;
 using System;
-using System.Diagnostics;
 
-namespace SimpleStates.Tests
+namespace simplestates.tests
 {
 	[TestFixture()]
-	public class Test
+	public class TestBasics
 	{
 		[Test()]
 		public void TestCreateStateMachine()

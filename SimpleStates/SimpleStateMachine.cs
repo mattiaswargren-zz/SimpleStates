@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿// Copyright (c) 2014 Mattias Wargren
+
+using System.Collections.Generic;
 using System.Globalization;
 using System;
 
-namespace SimpleStates
+namespace simplestates
 {
 	public class SimpleStateMachine
 	{

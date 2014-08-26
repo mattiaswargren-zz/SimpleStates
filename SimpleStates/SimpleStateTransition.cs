@@ -1,6 +1,8 @@
+// Copyright (c) 2014 Mattias Wargren
+
 using System;
 
-namespace SimpleStates
+namespace simplestates
 {
 
 	public class SimpleStateTransition
