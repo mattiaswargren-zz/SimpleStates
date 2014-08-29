@@ -1,7 +1,6 @@
 ﻿// Copyright (c) 2014 Mattias Wargren
 
 using System.Collections.Generic;
-using System.Globalization;
 using System;
 
 namespace simplestates
@@ -10,14 +9,11 @@ namespace simplestates
 	{
 		Dictionary<string, SimpleState> states = new Dictionary<string, SimpleState>();
 
-		public SimpleState state {
-			get;
-			private set;
-		}
+		public SimpleState state { get; private set; }
 
 		public SimpleState this [string pStateName] {
-			get {
-
+			get
+			{
 				if (pStateName == null)
 				{
 					return null;
@@ -31,7 +27,8 @@ namespace simplestates
 					throw new NotImplementedException(string.Format("{0} is not defined", pStateName));
 				}
 			}
-			set {
+			set
+			{
 				states[pStateName] = value;
 				states[pStateName].name = pStateName;
 			}
@@ -69,4 +66,3 @@ namespace simplestates
 		}
 	}
 }
-
