@@ -2,7 +2,7 @@
 
 using System;
 
-namespace simplestates
+namespace SimpleStates
 {
 
 	public class SimpleStateTransition

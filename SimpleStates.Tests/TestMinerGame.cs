@@ -3,7 +3,7 @@
 using NUnit.Framework;
 using System;
 
-namespace simplestates.tests
+namespace SimpleStates.Tests
 {
 	[TestFixture()]
 	public class TestMinerGame
