@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0040FA56-78A6-4018-B6FB-8203512C4498}</ProjectGuid>
+    <ProjectGuid>{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>simplestates</RootNamespace>
-    <AssemblyName>simplestates</AssemblyName>
+    <RootNamespace>SimpleStates</RootNamespace>
+    <AssemblyName>SimpleStates</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

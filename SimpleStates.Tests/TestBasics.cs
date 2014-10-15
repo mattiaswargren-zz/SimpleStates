@@ -4,7 +4,7 @@
 using NUnit.Framework;
 using System;
 
-namespace SimpleStates.Tests
+namespace simplestates.tests
 {
 	[TestFixture()]
 	public class TestBasics

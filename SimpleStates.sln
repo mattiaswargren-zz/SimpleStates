@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplestates", "simplestates\simplestates.csproj", "{0040FA56-78A6-4018-B6FB-8203512C4498}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStates", "SimpleStates\SimpleStates.csproj", "{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplestates.tests", "simplestates.tests\simplestates.tests.csproj", "{73D040E1-3A64-485C-86C0-3A3E4F7F7613}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStates.Tests", "SimpleStates.Tests\SimpleStates.Tests.csproj", "{353EC7F3-F35E-414B-A765-98C7C275B49C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,20 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0040FA56-78A6-4018-B6FB-8203512C4498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0040FA56-78A6-4018-B6FB-8203512C4498}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0040FA56-78A6-4018-B6FB-8203512C4498}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0040FA56-78A6-4018-B6FB-8203512C4498}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73D040E1-3A64-485C-86C0-3A3E4F7F7613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73D040E1-3A64-485C-86C0-3A3E4F7F7613}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73D040E1-3A64-485C-86C0-3A3E4F7F7613}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73D040E1-3A64-485C-86C0-3A3E4F7F7613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353EC7F3-F35E-414B-A765-98C7C275B49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353EC7F3-F35E-414B-A765-98C7C275B49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353EC7F3-F35E-414B-A765-98C7C275B49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353EC7F3-F35E-414B-A765-98C7C275B49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = simplestates\simplestates.csproj
-		Policies = $0
-		$0.StandardHeader = $1
-		$1.Text = Copyright (c) ${Year} ${CopyrightHolder}
-		$1.IncludeInNewFiles = True
+		StartupItem = SimpleStates\SimpleStates.csproj
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>SimpleStates.Tests</RootNamespace>
     <AssemblyName>SimpleStates.Tests</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,22 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="TestBasics.cs" />
-    <Compile Include="TestMinerGame.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleStates\SimpleStates.csproj">
-      <Project>{7B7FA4B0-B69E-4BE3-B61A-8F96FCD363A6}</Project>
-      <Name>SimpleStates</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
